@@ -1,0 +1,53 @@
+/*   BODY LAYOUT   */
+
+body {
+    width: 98vw;
+    height: 95vh;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 8vh auto auto auto 8vh;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "c c c c c c c c c c c c"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+body .content {
+    grid-area: c;
+}
+
+body .header {
+    grid-area: h;
+}
+
+body .footer {
+    grid-area: f;
+}
+
+.content .layout {
+    height: auto;
+    width: 98vw;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 25vh);
+    grid-template-areas: 
+        "a a c c c c c c c c"
+        "a a c c c c c c c c"
+        "a a c c c c c c c c";
+    
+}
+.content .layout > .article {
+    grid-area: a;
+}
+
+.sidebar {
+    grid-area: s;
+}
+
+.aside {
+    grid-area: s;
+}
