@@ -1,1 +1,26 @@
 <!-- This is my first of "CSS 3" practice files!!! -->
+.lesson{
+  font-size:18pt;
+  color:rgb(226, 17, 36);
+}
+th{
+  padding:5pt;
+}
+td{
+  padding:5px;
+  text-align: center;
+}
+.lessons-link{
+  padding: 15px;
+}
+.description{
+  text-align: left;
+}
+.lesson-title{
+  font-size:25pt;
+  color:rgb(226, 17, 36);
+}
+.lesson-subtitle{
+  font-size:20pt;
+  color:rgb(213, 139, 0);
+}

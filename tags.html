@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML tags</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+  <h1>Here's a quick review of HTML tags:</h1>
+  <img src="pictures/tag.png" alt="">
+  <div class="lessons-link"><a href="index.html" title="Go back to the full List of all lessons">Back to Lessons list</a></div>
+  <table border="1px" style="padding:3px">
+    <thead>
+      <tr>
+        <th>HTML Tag name</th>
+        <th>Tag attributes</th>
+        <th>Description</th>
+        <th>Tag examples</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>&lt!DOCTYPE html&gt</b></td>
+        <td><b>NO</b> attributes</td>
+        <td>All HTML documents must start with a document type declaration.</td>
+        <td><b>&lt!DOCTYPE html&gt</b></td>
+      </tr>
+      <tr>
+        <td><b>&lthtml&gt</b> and <b>&lt/html&gt</b></td>
+        <td><b>NO</b> attributes</td>
+        <td>The HTML document itself begins with <b>&lthtml&gt</b> and ends with <b>&lt/html&gt</b></td>
+        <td><b>&lthtml&gt</b> HTML document content <b>&lt/html&gt</b></td>
+      </tr>
+      <tr>
+        <td><b>&lthead&gt</b> and <b>&lt/head&gt</b></td>
+        <td><b>NO</b> attributes</td>
+        <td>Head element is a container for all the head elements. The <b>&lthead&gt</b> element can include a <b>&lttitle&gt</b> of the document, <b>&ltstyle&gt</b>, <b>&ltbase&gt</b>, <b>&ltlink&gt</b>, <b>&ltscript&gt</b>, <b>&ltnoscript&gt</b>, and <b>&ltmeta&gt</b> information.</td>
+        <td><b>&lthtml&gt</b> HTML document content <b>&lt/html&gt</b></td>
+      </tr>
+      <tr>
+        <td><b>&lthead&gt</b> <br /> <b>&lttitle&gt</b></td>
+        <td><b>NO</b> attributes</td>
+        <td>The <b>&lttitle&gt</b> tag is required in all HTML documents and it defines the title of the document. <p style="text-align:left">The <b>&lttitle&gt</b> element:</p>
+          <ul style="text-align:left">
+            <li>defines a title in the browser toolbar</li>
+            <li>provides a title for the page when it is added to favorites</li>
+            <li>displays a title for the page in search-engine results</li>
+          </ul></td>
+        <td><b>&lttitle&gt</b> Web page title <b>&lt/title&gt</b></td>
+      </tr>
+      <tr>
+        <td><b>&lthead&gt</b> <br /> <b>&ltstyle&gt</b></td>
+        <td><a href="tag-atributes.html#media"><b>media</b></a></td>
+        <td>The style tag is used to define style information for an HTML documents.<br />Inside the style element you specify how HTML elements should render in a browser.<br />Each HTML document can contain multiple style tags.</td>
+        <td><b>&ltstyle&gt</b><br />
+            h1 {color:red;}<br />
+            p {color:blue;}<br />
+            <b>&lt/style&gt</b></td>
+      </tr>
+      <tr>
+        <td><b>&lthead&gt</b> <br /> <b>&ltstyle&gt</b></td>
+        <td><b>media</b></td>
+        <td>The style tag is used to define style information for an HTML documents.<br />Inside the style element you specify how HTML elements should render in a browser.<br />Each HTML document can contain multiple style tags.</td>
+        <td><b>&ltstyle&gt</b><br />
+            h1 {color:red;}<br />
+            p {color:blue;}<br />
+            <b>&lt/style&gt</b></td>
+      </tr>
+    </tbody>
+
+  </table>
+  <ul>
+    <li><h3>'body' and '/body'</h3>
+      <p>The visible part of the HTML document is between 'body' and '/body'.</p>
+    </li>
+    <li><h3>HTML Headings: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'</h3>
+      <p>'h1' defines the most important heading.</p>
+      <p>'h6' defines the least important heading.</p>
+    </li>
+    <li><h3>HTML Paragraph: 'p'</h3>
+      <p>HTML paragraphs are defined with the 'p' tag.</p>
+    </li>
+    <li><h3>HTML Links: 'a'</h3>
+      <p>The link's destination is specified in the href attribute.</p>
+      <p>EXAMPLE: 'a href="link URL"' link text '/a' </p>
+    </li>
+    <li><h3>HTML Images: 'img'</h3>
+      <p>HTML images are defined with the 'img' tag.</p>
+      <p>The source file (src), alternative text (alt), (width), and (height) are provided as attributes.</p>
+    </li>
+    <li><h3>HTML Buttons: 'button'</h3>
+      <p>HTML buttons are defined with the 'button' tag.</p>
+      <p>EXAMPLE: (button)Click me!(/button)</p>
+    </li>
+    <li><h3>HTML Lists: 'ol' and 'ul'</h3>
+      <p>HTML lists are defined with the 'ul' (unordered/bullet list) or the 'ol' (ordered/numbered list) tag, followed by 'li' tags (list items)</p></li>
+    <li><h3>Line break: 'br'</h3>
+      <p>'br' is an empty element without a closing tag (the 'br' tag defines a line break).</p></li>
+  </ul>
+</body>
+</html>
