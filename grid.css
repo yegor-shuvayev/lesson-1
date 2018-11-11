@@ -2,11 +2,11 @@
 
 body {
     width: 98vw;
-    height: 95vh;
+    height: 98vh;
     display: grid;
-    grid-gap: 0px;
+    grid-gap: 0fr;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 8vh auto auto auto 8vh;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
         "h h h h h h h h h h h h"
         "c c c c c c c c c c c c"
@@ -15,39 +15,63 @@ body {
         "f f f f f f f f f f f f";
 }
 
-body .content {
-    grid-area: c;
-}
 
-body .header {
+.header {
     grid-area: h;
 }
 
-body .footer {
+.content {
+    grid-area: c;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-gap: 0fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+        "i-l i-l i-h i-h i-h i-h i-h i-h i-h i-h"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-r i-r i-r"
+        "i-l i-l i-c i-c i-c i-c i-c i-s i-s i-s"
+        "i-l i-l i-c i-c i-c i-c i-c i-s i-s i-s"
+        "i-l i-l i-f i-f i-f i-f i-f i-f i-f i-f"
+        "i-l i-l i-f i-f i-f i-f i-f i-f i-f i-f";
+    }
+
+.footer {
     grid-area: f;
 }
+/*.content .layout > .article {grid-area: a;}*/
 
-.content .layout {
-    height: auto;
-    width: 98vw;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 25vh);
-    grid-template-areas: 
-        "a a c c c c c c c c"
-        "a a c c c c c c c c"
-        "a a c c c c c c c c";
-    
-}
-.content .layout > .article {
-    grid-area: a;
-}
-
-.sidebar {
+/*.sidebar {
     grid-area: s;
+}*/
+
+.inner-left {
+    grid-area: i-l;
 }
 
-.aside {
-    grid-area: s;
+.inner-header {
+    grid-area: i-h;
+}
+
+.inner-content {
+    grid-area: i-c;
+}
+
+.inner-footer {
+    grid-area: i-f;
+}
+
+.inner-right {
+    grid-area: i-r;
+}
+
+.inner-sidebar {
+    grid-area: i-s;
 }
